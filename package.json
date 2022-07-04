@@ -1,0 +1,32 @@
+{
+  "name": "VietToc-APP-OS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.7",
+    "electron-builder": "^23.1.0"
+  },
+  "dependencies": {
+    "electron-updater": "^5.0.5"
+  },
+  "build": {
+    "appId": "com.applyhead.viettoc",
+    "productName": "VietToc",
+    "copyright": "Website và Ứng dụng được vận hành THỬ NGHIỆM bởi Nhóm phát triển Việt Tộc thuộc Cty CP Phần mềm Siten. Cty CP Phần mềm Siten giữ toàn quyền đối với các nội dung được sử dụng trên trang này.",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "type": "distribution"
+    }
+  }
+}
